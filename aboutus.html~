@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ABOUT US</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="css/menu.css">
+    
+   
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <meta charset="UTF-8">
+  <title>Timeline CSS</title>
+        <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One|Source+Sans+Pro:400" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="css/about.css">
+
+    
+</head>
+
+<body style="background-color:#000010;">
+
+  <div ng-app="testApp" ng-controller="testCtrl as test" ng-class="{'menu-open': test.menuOpen}">
+  <header class="site-navbar navbar-fixed-top">
+    <a ng-click='test.menuOpen =! test.menuOpen' class="menu-switch">
+      <i class="bar-icon">
+        <div class="bar-icon-1"></div>
+        <div class="bar-icon-2"></div>
+        <div class="bar-icon-3"></div>
+      </i>
+    </a>
+  </header>
+       
+  <nav class="menu" style="position:fixed;">
+    
+      <ul class="list-unstyled" style="left:30%;">
+      <li>Home
+          <hr style="width:30%; border:1px solid red;"></li>
+        <br>
+     <li>Conduct
+            <hr style="width:30%; border:1px solid red;"></li>
+        <br>  
+    <li>Speakers
+          <hr style="width:30%; border:1px solid red;"></li>
+        <br>
+          
+          <li>About
+              <hr style="width:30%; border:1px solid red;"></li>
+          <br>
+       <li>Sponsors
+          <hr style="width:30%; border:1px solid red;"></li>
+        <br>
+          </ul>
+      <div class="outer_vertical"><div class="inner_vertical"></div></div>
+    <ul class="list-unstyled" style="right:10%;">
+    <img src="empowerment.jpg" alt="IMAGE" style="width:250px; height:200px;">
+      </ul>
+      </nav>
+    </div>
+    
+    
+ <div class="page">   
+<section id="timeline">
+  
+  <div class="tl-item">
+    
+    <div class="tl-bg" style="background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Association_for_Computing_Machinery_%28ACM%29_logo.svg/1024px-Association_for_Computing_Machinery_%28ACM%29_logo.svg.png)"></div>
+    
+    <div class="tl-year">
+      <h2 >ACM</h2>
+    </div>
+
+    <div class="tl-content">
+      <h1>Lorem ipsum dolor sit</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+    </div>
+
+  </div>
+
+  <div class="tl-item">
+    
+    <div class="tl-bg" style="background-image: url(https://women.acm.org/wp-content/uploads/ACMW-Webpage/Newsletters/Images/2014/2014-03-DSC_0125.jpg?246bcc)"></div>
+    
+    <div class="tl-year">
+      <h2 >ACMW</h2>
+    </div>
+
+    <div class="tl-content">
+      <h1 class="f3 text--accent ttu">Vestibulum laoreet lorem</h1>
+      <p>Suspendisse potenti. Sed sollicitudin eros lorem, eget accumsan risus dictum id. Maecenas dignissim ipsum vel mi rutrum egestas. Donec mauris nibh, facilisis ut hendrerit vel, fringilla sed felis. Morbi sed nisl et arcu.</p>
+    </div>
+
+  </div>
+
+  <div class="tl-item">
+    
+    <div class="tl-bg" style="background-image: url(https://scontent.fnag1-2.fna.fbcdn.net/v/t1.0-9/12670578_1715227465366604_8530380024467451086_n.png?oh=37be3612f9e2726e9dbbc6159cfde549&oe=5AFB5090)"></div>
+    
+    <div class="tl-year">
+      <h2 >PASC</h2>
+    </div>
+
+    <div class="tl-content">
+      <h1 class="f3 text--accent ttu">Valar Morghulis</h1>
+      <p>Mauris cursus magna at libero lobortis tempor. Suspendisse potenti. Aliquam interdum vulputate neque sit amet varius. Maecenas ac pulvinar nisi. Fusce vitae nunc ultrices, tristique dolor at, porttitor dolor. Etiam id cursus arcu, in dapibus nibh. Pellentesque non porta leo. Nulla eros odio, egestas quis efficitur vel, pretium sed.</p>
+    </div>
+
+  </div>
+
+ 
+</section>
+     </div>
+    <!--br><br><br-->
+    
+    <footer>
+        <div class="col-ld-3  col-md-3 col-sm-3">
+             <div class="footer-contact">Pune Institute of Computer Technology<br>Sr. No 27, Pune-Satara Road<br> Behind Bharati Vidyapeeth College<br> Dhankawadi, Pune<br>Maharashtra 411043</div>
+        </div>
+        
+        <div class="col-ld-3  col-md-3 col-sm-3">
+            <div class="footer-quote">
+            Little girls with<br>Dreams become <br>women with Vision!<br>
+                <hr style="1px soiid white; width:100px;">
+            </div>
+        </div>
+        
+        
+        <div class="col-ld-3  col-md-3 col-sm-3" >
+            <div class="footer-acmw">
+                ACM-W supporting, celebrating and advocating for Women in Computing<br><br>
+                <a class="test" href="https://women.acm.org/" data-toggle="tooltip" data-placement="top" title="Visit ACMW">women.acm.org</a>
+                <hr style="1px soiid white; width:100px;">
+            </div>            
+            
+        </div>
+        
+        <div class="col-ld-3  col-md-3 col-sm-3" >
+           
+            <a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-linkedin"></a>
+               
+            </div>
+        
+    </footer>
+    
+      
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js'></script>
+<script  src="js/menu.js"></script>
+  <script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+   
+
+
+
+
+</body>
+
+</html>

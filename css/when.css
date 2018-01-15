@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create three equal columns that floats next to each other */
+.column3 {
+    float: left;
+    width: 66.66%;
+    padding: 40px;
+    height: 400px; 
+   
+    background-size: cover;
+    text-align:center;
+    background-repeat: no-repeat;/* Should be removed. Only for demonstration */
+}
+.column4 {
+    float: left;
+    width: 33.34%;
+    padding: 40px;
+    height: 400px; 
+   
+    background-size: cover;
+    text-align:center;
+    background-repeat: no-repeat;/* Should be removed. Only for demonstration */
+}
+
+
+
+/* Clear floats after the columns */
+.row1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+div.backgroundw {
+background-size: cover;
+    background-repeat: no-repeat;
+}
+
+div.transboxw {
+    position: relative;
+    align-content: center;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    
+ 
+}
+
+div.transboxw p {
+   text-align: center;
+  font-size: 60px;
+  margin-top:20px;
+  margin-bottom:20px;
+  font-family:Mada;
+  font-style: oblique;
+    color:beige;
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column3 {
+        width: 100%;
+        height: 100%;
+    }
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column4 {
+        width: 100%;
+        height: 100%;
+    }
+}
