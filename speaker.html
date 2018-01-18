@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" >
-
 <head>
   <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,13 +8,12 @@
     <link rel="shortcut icon" type="image/icon" href="img/favicon.png"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
-      <link rel="stylesheet" href="css/speaker.css">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel="stylesheet" href="css/menu.css">
-    
+    <link rel="stylesheet" href="css/speakers.css">
    
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -24,22 +22,63 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <meta charset="UTF-8">
-  <title>Timeline CSS</title>
-        <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One|Source+Sans+Pro:400" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One|Source+Sans+Pro:400" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<style>
+    .profile{
+       
+        max-width: 22em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  line-height: 1;
+  text-align: center;
+    }
+    .profile-img {
+  display: inline-block;
+        visibility: inherit;
+  height: 15em;
+  margin-right: auto;
+  margin-left: auto;
+  border: .5em solid #f2f2f2;
+  border-radius: 100%;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+}
 
-  
+.profile-text {
+  margin-top: -3.5em;
+  padding: 5em 1.5em 1.5em 1.5em;
+  background:#00cccc ;
+    color: black;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
 
+.profile-name {
+  margin-right: -1em;
+  margin-bottom: .75em;
+  margin-left: -1em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: .75em;
+  font-size: 1.5em;
+  text-transform: uppercase;
+    color:black;
+}
 
-    
+.profile-title {
+  color: solid black;
+}
 
-  
+    </style>
 </head>
 
 <body style="background-color:#000010;">
     <div ng-app="testApp" ng-controller="testCtrl as test" ng-class="{'menu-open': test.menuOpen}">
   <header class="site-navbar navbar-fixed-top">
+      <h1 style="margin-left:45%; font-weight:500; text-decoration: underline; letter-spacing:1px; color:darkslateblue;">SPEAKERS</h1>
     <a ng-click='test.menuOpen =! test.menuOpen' class="menu-switch">
       <i class="bar-icon">
         <div class="bar-icon-1"></div>
@@ -75,66 +114,45 @@
       </ul>
       </nav>
     </div>
-
-<div style="background-color:azure;">
-    <div class="wrapper" style="margin-top:5%;">
+<br><br><br>
     
-    <div class="block animatable bounceInLeft ">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyYKS1OGX3I7ZBtN8BJMrW9duCi_Bnj9daATWwumRBHYcuu1qc2Q" alt="John" style="width:100%">
-  <h1 style="color: black">Janet Reno</h1>
-  <p style="color: crimson">CEO & Founder</p>
-  <p style="color: darkslategrey">Harvard University</p>
-  <div style="margin: 24px 0;">
-    <a href="#"><i class="fa fa-dribbble"></i></a> 
-    <a href="#"><i class="fa fa-twitter"></i></a>  
-    <a href="#"><i class="fa fa-linkedin"></i></a>  
-    <a href="#"><i class="fa fa-facebook"></i></a> 
- </div>
-        <p><button>Contact</button></p>
-        </div>
-    <div class="block animatable bounceInRight">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJGyylMTScyJkqxTnNLbohR_q3KslPcZAXcHIvg135iIqj25kg" alt="John" style="width:100%">
-  <h1 style="color: black">Maithali Raj</h1>
-  <p style="color: crimson">Entrepreneur</p>
-  <p style="color: darkslategrey">Harvard University</p>
-  <div style="margin: 24px 0;">
-    <a href="#"><i class="fa fa-dribbble"></i></a> 
-    <a href="#"><i class="fa fa-twitter"></i></a>  
-    <a href="#"><i class="fa fa-linkedin"></i></a>  
-    <a href="#"><i class="fa fa-facebook"></i></a> 
- </div>
-        <p><button>Contact</button></p>
-        </div>
     
-    <div class="block animatable bounceInLeft">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_2vkgrnpQq3lkaFSGAfUkw68dVW0wUlTXLeboRAGLzVvSBUtkMg"alt="John" style="width:100%">
-  <h1 style="color: black">Jennis D'couza</h1>
-  <p style="color: crimson">CEO & Founder</p>
-  <p style="color: darkslategrey">Harvard University</p>
-  <div style="margin: 24px 0;">
-    <a href="#"><i class="fa fa-dribbble"></i></a> 
-    <a href="#"><i class="fa fa-twitter"></i></a>  
-    <a href="#"><i class="fa fa-linkedin"></i></a>  
-    <a href="#"><i class="fa fa-facebook"></i></a> 
- </div>
-        <p><button>Contact</button></p>
-        </div>
-    <div class="block animatable bounceInRight">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyYKS1OGX3I7ZBtN8BJMrW9duCi_Bnj9daATWwumRBHYcuu1qc2Q" alt="John" style="width:100%">
-  <h1 style="color: black">Pushparaj Nees</h1>
-  <p style="color: crimson">Social Worker</p>
-  <p style="color: darkslategrey">Harvard University</p>
-  <div style="margin: 24px 0;">
-    <a href="#"><i class="fa fa-dribbble"></i></a> 
-    <a href="#"><i class="fa fa-twitter"></i></a>  
-    <a href="#"><i class="fa fa-linkedin"></i></a>  
-    <a href="#"><i class="fa fa-facebook"></i></a> 
- </div>
-        <p><button>Contact</button></p>
-        </div> 
+<div style="background-color:white;">
+   <div class="profile">
+    <div class="animatable bounceIn">
+     <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkSlUBZtB86N97Bp0iV-jLw_Zf1plsAFTXEODJivLlbkPcKonB class="profile-img">
+  <div class="profile-text">
+    <h1 class="profile-name">Jonathan Doe</h1>
+    <span class="profile-title">UX / UI Designer</span>
   </div>
-   </div> 
-    <br><br>
+        </div>
+    <br><br><br>
+       <div class="animatable moveUp">
+     <img src= https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkSlUBZtB86N97Bp0iV-jLw_Zf1plsAFTXEODJivLlbkPcKonB class="profile-img">
+  <div class="profile-text">
+    <h1 class="profile-name">Jonathan Doe</h1>
+    <span class="profile-title">UX / UI Designer</span>
+  </div>
+           </div>
+    <br><br><br>
+           <div class="animatable bounceIn">
+     <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkSlUBZtB86N97Bp0iV-jLw_Zf1plsAFTXEODJivLlbkPcKonB class="profile-img">
+  <div class="profile-text">
+    <h1 class="profile-name">Jonathan Doe</h1>
+    <span class="profile-title">UX / UI Designer</span>
+  </div>
+       </div>
+    <br><br><br>
+         <div class="animatable moveUp">
+     <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkSlUBZtB86N97Bp0iV-jLw_Zf1plsAFTXEODJivLlbkPcKonB class="profile-img">
+  <div class="profile-text">
+    <h1 class="profile-name">Jonathan Doe</h1>
+    <span class="profile-title">UX / UI Designer</span>
+             </div>
+  </div>
+      </div>
+   
+    </div>
      <footer>
         <div class="col-ld-3  col-md-3 col-sm-3">
              <div class="footer-contact">Pune Institute of Computer Technology<br>Sr. No 27, Pune-Satara Road<br> Behind Bharati Vidyapeeth College<br> Dhankawadi, Pune<br>Maharashtra 411043</div>
@@ -158,10 +176,9 @@
         </div>
         <div class="col-ld-3  col-md-3 col-sm-3" >
            
-            <a href="#" class="fa fa-facebook"></a>
-<a href="#" class="fa fa-twitter"></a>
-<a href="#" class="fa fa-google"></a>
-<a href="#" class="fa fa-linkedin"></a>
+             <a href="https://www.facebook.com/acmpict" class="fa fa-facebook"></a>
+<a href="https://twitter.com/theofficialacm" class="fa fa-twitter"></a>
+<a href="https://plus.google.com/u/0/114498874837755908513" class="fa fa-google"></a>
                
             </div>
         
@@ -179,7 +196,8 @@ $(document).ready(function(){
 
 
   <script src='https://code.jquery.com/jquery-1.10.1.min.js'></script>
-    <script  src="js/speaker.js"></script>
+   
+    <script src="js/speaker.js"></script>
 
 
 

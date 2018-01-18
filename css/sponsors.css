@@ -1,26 +1,16 @@
 
    .fond{position:relative;padding-top:85px;top:0;left:0; right:0;bottom:0;
- background-color:#000010;}
-    
-.name {
-    
-    color:burlywood;
-    height : 50px;
-    text-align: center;
-    margin-top: 30px;
-    letter-spacing: 3px;
-    width: 100%;
+ }
 
-} 
 .style_prevu_kit
 {
+    margin:27px;
     display:inline-block;
     border:0;
-    width:196px;
+    width:190px;
     height:210px;
     position: relative;
-    margin-left: 20px;
-    margin-right: 25px;
+   
     -webkit-transition: all 200ms ease-in;
     -webkit-transform: scale(1); 
     -ms-transition: all 200ms ease-in;

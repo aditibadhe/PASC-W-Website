@@ -16,7 +16,7 @@ body {
     .list-unstyled{
         margin-left: 20%;
     }
-    img {
+    .list-unstyled img {
         visibility: hidden;
     } 
     .outer_vertical {
@@ -31,8 +31,8 @@ body {
 .site-navbar {
   height: 73px;
   line-height: 75px;
-  background-color:bisque;
-      
+  background-image:url('https://i.pinimg.com/236x/70/93/dd/7093dde39147a57ec093d8006c5f1a05--texture-yellow.jpg');
+    
   padding: 0 2px;
 }
 
@@ -41,7 +41,7 @@ body {
     top: 0;
     right: 0;
 position:fixed;
-  color: #000;
+  color: #010101;
   float: right;
   height: 75px;
   width: 75px;
@@ -63,7 +63,7 @@ position:fixed;
 .bar-icon > * {
   height: 4px;
   width: 25px;
-  background-color: #000;
+  background-color: #010101;
     
   position: absolute;
   top: 0;

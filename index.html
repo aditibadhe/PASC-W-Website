@@ -1,62 +1,49 @@
 <!DOCTYPE html>
-<html >
+<html class="no-js" lang="">
+
 <head>
-  <meta charset="UTF-8">
+ <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ACMW|Website</title>
-        <!-- Favicon -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ACMW|Website</title>
+     <!-- Favicon -->
     <link rel="shortcut icon" type="image/icon" href="img/favicon.png"/>
-  
-        <link rel='stylesheet prefetch' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/80729/helpers.css'>
-        <link rel='stylesheet prefetch' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/80729/atc-fonts.css'>
-        <link rel="shortcut icon" href="Data/website/gold.png" />
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One|Source+Sans+Pro:400" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" href="css/when.css">
-        <link rel="stylesheet" href="css/where.css">
-        <link href="css/footer.css" rel="stylesheet">
-        <link href="css/menu.css" rel="stylesheet">
-     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Superslide css file-->
-    <link rel="stylesheet" href="css/superslides.css">
-    <!-- smooth animate css file -->
-    <link rel="stylesheet" href="css/animate.css"> 
-    <!-- Default Theme css file -->
-    <link id="switcher" href="css/themes/default-theme.css" rel="stylesheet">
-    <!-- Main structure css file -->
-    <link href="css/style.css" rel="stylesheet">
-   
-    <!-- Google fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>   
-    <link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>    
-
- 
-</head>
-<style>
-    @media (max-width: 600px) {
-        .slider_caption h2 {
-            font-size:20px;
-        }
-    }
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     
-    </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-<body style = 'background-color: #000010;'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="css/menu.css">
+    
+   
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/footer.css">
   
-<div ng-app="testApp" ng-controller="testCtrl as test" ng-class="{'menu-open': test.menuOpen}">
-  <header class="site-navbar navbar-fixed-top">
+<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+    
+</head>
+
+<body style="background-color: #000010;">
+
+   	<div ng-app="testApp" ng-controller="testCtrl as test" ng-class="{'menu-open': test.menuOpen}">
+  	<header class="site-navbar navbar-fixed-top">
+        <h1 style="margin-left:45%; font-weight:400; text-decoration: underline; letter-spacing:1px; color:darkslateblue;">ACM-W</h1>
     <a ng-click='test.menuOpen =! test.menuOpen' class="menu-switch">
       <i class="bar-icon">
         <div class="bar-icon-1"></div>
@@ -64,9 +51,9 @@
         <div class="bar-icon-3"></div>
       </i>
     </a>
-  </header>
+  	</header>
        
-  <nav class="menu" style="position:fixed;">
+  	<nav class="menu" style="position:fixed;">
     
       <ul class="list-unstyled" style="left:30%;">
        <a href = "index.html"><li>Home
@@ -88,130 +75,66 @@
           </ul>
       <div class="outer_vertical"><div class="inner_vertical"></div></div>
     <ul class="list-unstyled" style="right:10%;">
-    <img src="img/empowerment.jpg" alt="IMAGE" style="width:250px; height:200px;">
+    <img src="img/empowerment.jpg" alt="IMAGE" style="width:300px; height:250px;">
       </ul>
       </nav>
     </div>
 
-     <!--=========== BEGIN SLIDER SECTION ================-->
-    <section id="slider" style="overflow: hidden; left:1px;" >
-      <div class="row">
-        <div class="col-lg-12 col-md-12">
-          <div class="slider_area">
-            <!-- Start super slider -->
-            <div id="slides">
-              <ul class="slides-container">                          
-                <li>
-                   
-                  <img src="img/6.jpg" alt="img">
-                   <div class="slider_caption" style="margin-top:20%;">
-                    <h2>Welcome to PICT ACMW</h2>
-                    <p>ACM, the Association for Computing Machinery, brings <br>together computing educators, researchers, <br>and professionals to inspire dialogue,<br> share resources, and address the field’s challenges.</p>
-                    
-                  </div>
-                  </li>
-                <!-- Start single slider-->
-                <li>
-                  <img src="img/2.jpg" alt="img">
-                   <div class="slider_caption slider_right_caption">
-                    <h2>Our Chapter PASC</h2>
-                    <p>A vision to carry on ACM International’s intentions on a grass root level in PICT. We aim to provide opportunities to students by organizing world-class seminars, lectures, and workshops to meet peers and experts in their fields of interest.</p>
-                    
-                  </div>
-                </li>
-                <!-- Start single slider-->
-                <li>
-                  <img src="img/womencoding.jpg" alt="img">
-                   <div class="slider_caption">
-                    
-                    <p>Science is not a boy's game, it is not a girl's game. It's everyone's game. It's about where we are and where we are going.<br>                      -Nichelle Nicols</p>
-                                      
-                  </div>
-                </li>
-              </ul>
-              <nav class="slides-navigation">
-                <a href="#" class="next"></a>
-                <a href="#" class="prev"></a>
-              </nav>
-            </div>
+
+
+<!--header section -->
+<section class="banner" role="banner">
+  <div class="banner-area"> 
+      <!-- overlay -->
+    <div class="banner-area-gradient"></div>
+    <!-- overlay -->
+    <div class="inner-bg">
+      <div class="container">
+        <div class="col-md-10 col-md-offset-1">
+          <div class="banner-text text-center">
+            <h1>Coming soon</h1>
+            <!--Countdown -->
+            <div id="countdown"></div>
+            <!--Countdown --> 
+           
+            
           </div>
         </div>
       </div>
-    </section>
-
-  <!--WHEN SECTION-->
-   <div class="row1">
-   <div class="backgroundw">
-   <div class="column3" style="background-color: #261339;">
-    <div class="transboxw">
-    <p id="demo"></p>
-    <script>
-    // Set the date we're counting down to
-    var countDownDate = new Date("Feb 24, 2018 16:18:25").getTime();
-
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-
-        // Get todays date and time
-        var now = new Date().getTime();
-        
-        // Find the distance between now an the count down date
-        var distance = countDownDate - now;
-        
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        
-        // Output the result in an element with id="demo"
-        document.getElementById("demo").innerHTML = days + "d &nbsp;" + hours + "h &nbsp;"
-        + minutes + "m &nbsp;" + seconds + "s ";
-        
-        // If the count down is over, write some text 
-        if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("demo").innerHTML = "EXPIRED";
-        }
-    }, 1000);
-    </script>
-        <hr style="width:30%; border-color: 1px solid beige;">
-   </div>
-   </div>
-   </div>
-
-   <div class="column4" style="background-image: url(img/1.jpg) ;">
-     <h2 style="align-content: center;font-family: fantasy; font-size: 40px;position: relative;margin-top:30px;">WHEN</h2>
-     <p style="font-family: fantasy;font-size: 40px;position: relative;">24<sup>th</sup>February<br>2018<br>Monday</p>
-        
-   </div>
+    </div>
   </div>
-        
-
-  <!-------WHERE SECTION------>
-  <div class="row2">
-    <div class="column2" style="background-color:#4d0000;padding:40px;">
-        <p><h1 style="color:white;">WHERE</h1>
-    <a href="https://www.google.co.in/maps/dir/''/pict+location+google+maps/@18.4575292,73.7807931,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bc2eac85230ba47:0x871eddd0a8a0a108!2m2!1d73.8508336!2d18.4575421">
-    <i class="fa fa-map-marker" style="font-size:40px;color:white" ></i></a>
-    <p><h3 style="color:white;">Pune Institute of Computer Technology, Dhankawadi, Pune</h3>
-   </div>
+</section>
+<!--header section -->
+<div style="background-color:white;">
+<div class="row">
+    <div class="col-ld-1 col-md-1 col-sm-1"></div>
+    <div class="col-ld-5 col-md-5 col-sm-5">
+        <div class="photo1" data-aos="fade-right"><div class="text-block"><div style="color:beige; font-size:32px; font-weight:bolder; margin-top:40%;">Welcome to<br>ACMW</div></div></div></div>
     
-  <div class="column1"  >
-  <img src="img/6.jpg" id="1" width="100%" height="400px">
+    <div class="col-ld-5 col-md-5 col-sm-5">
+        <div class="calendar" data-aos="fade-left"><h2 style="margin-top:50px; letter-spacing:2px;">WHEN</h2><hr style="border:1px solid black; width:50px;">
+        <div class="fa" style="font-size:28px; margin-top:-30px;">&#xf073;</div><div style="font-family:sans-serif; font-size:28px; margin-top:50px;">24th FEBRUARY<br> 2018</div>
+        </div></div>
+    
+    
+    <div class="col-ld-1 col-md-1 col-sm-1"></div>
     </div>
-   
-  <div class="column2" style="background-image: url(img/3.jpeg);padding:40px;"  >
-     <div class="transboxwh">
-      <h1>PASC</h1>
+    <div class="row">
+   <div class="col-ld-1 col-md-1 col-sm-1"></div>
+        <div class="col-ld-5 col-md-5 col-sm-5">
+            <div class="photo2" data-aos="fade-right"><div class="text-block"><div style="color:beige; font-size:32px; font-weight:bolder; margin-top:20%;">At<br>Pune Institute<br>of<br>Computer Technology</div></div></div></div>
+     
+    
          
-      <p style="font-size:20px;">We aim to provide opportunities to students by organizing world-class seminars, lectures, and workshops to meet peers and experts in their fields of interest.</p>
+    <div class="col-ld-5 col-md-5 col-sm-5">
+            <div class="calendar" data-aos="fade-left">WHERE<hr style="border:1px solid black; width:50px;"><section id="googleMap">
+      <iframe width="100%" height="350"frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9001.139650983947!2d73.84526340497717!3d18.460406556687765!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x871eddd0a8a0a108!2sPune+Institute+of+Computer+Technology!5e0!3m2!1sen!2sin!4v1466412571067"></iframe>
+    </section></div></div>
+        <div class="col-ld-1 col-md-1 col-sm-1"></div>
     </div>
-  </div>
-  </div>
-    <br><br>
-        <!--=========== FOOTER SECTION ================-->
- 	<footer>
+
+    <br><br><br>   </div> 
+         <footer>
         <div class="col-ld-3  col-md-3 col-sm-3">
              <div class="footer-contact">Pune Institute of Computer Technology<br>Sr. No 27, Pune-Satara Road<br> Behind Bharati Vidyapeeth College<br> Dhankawadi, Pune<br>Maharashtra 411043</div>
         </div>
@@ -235,38 +158,45 @@
         
         <div class="col-ld-3  col-md-3 col-sm-3" >
            
-            <a href="#" class="fa fa-facebook"></a>
-<a href="#" class="fa fa-twitter"></a>
-<a href="#" class="fa fa-google"></a>
-<a href="#" class="fa fa-linkedin"></a>
+            <a href="https://www.facebook.com/acmpict" class="fa fa-facebook"></a>
+<a href="https://twitter.com/theofficialacm" class="fa fa-twitter"></a>
+<a href="https://plus.google.com/u/0/114498874837755908513" class="fa fa-google"></a>
+
                
-            </div>
+             </div>        
         
     </footer>
     
     
-    
-
-     <script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js'></script>
+      
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js'></script>
 <script  src="js/menu.js"></script>
   <script>
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();   
 });
-</script>
-   
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</script> 
+    
+    
 
-    <!-- Bootstrap js -->
-    <script src="js/bootstrap.min.js"></script>
+<!-- JS files--> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.backstretch.min.js"></script> 
+<script src="js/jquery.countdown.js"></script> 
+<script type="text/javascript" src="js/jquery.subscribe.js"></script> 
+<script src="js/main.js"></script>
 
-    <!-- superslides slider -->
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/jquery.animate-enhanced.min.js"></script>
-    <script src="js/jquery.superslides.min.js" type="text/javascript" charset="utf-8"></script>   
+<script  src="js/menu.js"></script>
+
+    
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+<script src='https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js'></script>
+
+<script  src="js/index.js"></script>
  
-   
-    <!-- Custom js-->
-    <script src="js/custom.js"></script>  
-</body>
+
+
+    
+    </body>
 </html>
