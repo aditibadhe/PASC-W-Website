@@ -29,6 +29,11 @@
  .item {
  width:70%;
 }
+body
+{
+  margin:0;
+  padding:0;right:0;
+}
 }
 @media screen and (max-width: 320px) {
  .banner-text {
@@ -37,4 +42,64 @@
  .item {
  width:70%;
 }
+body
+{
+  margin:0;
+  padding:0;
+  right:0;
 }
+.banner{
+ width:100%;
+}
+}
+
+/*@media screen and (max-width: 600px) {
+ .photo1 {
+ width:100%;
+}
+
+@media screen and (max-width: 600px) {
+ .photo2 {
+ width:100%;
+}
+
+@media screen and (max-width: 600px) {
+ .calendar {
+ width:100%;
+}
+
+@media screen and (max-width: 600px) {
+ .maps {
+left:0;
+ width:100%;
+}
+
+@media all and (max-width: 850px) {
+
+  .site-navbar{
+  font-size: 35%;
+    top: 0;
+    width:100%;
+    right:0;
+}
+  .menu {
+    font-size: 35%;
+    top: 0;
+ }
+    .list-unstyled{
+        margin-left: 20%;
+    }
+    .list-unstyled img {
+        visibility: hidden;
+    } 
+    .outer_vertical {
+        visibility:hidden;
+    }
+    
+    .inner_vertical {
+        visibility:hidden;
+    }
+ 
+}*/
+
+

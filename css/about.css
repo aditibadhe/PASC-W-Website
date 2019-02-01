@@ -20,10 +20,10 @@ body {
   position: relative;
   width: 33.33%;
   height: 100vh;
-  min-height: 600px;
+  min-height: 900px;
   color: #fff;
   overflow: hidden;
-  -webkit-transition: width 0.5s ease;
+  -webkit-transition: height 0.5s ease;
   transition: width 0.5s ease;
 }
 .tl-item:before, .tl-item:after {
@@ -88,7 +88,7 @@ body {
   z-index: 1;
   text-align: center;
   margin: 0 1.618em;
-  top: 55%;
+  top: 30%;
   opacity: 0;
 }
 .tl-content h1 {
@@ -101,7 +101,7 @@ body {
 
 .tl-year {
   position: absolute;
-  top: 50%;
+  top: 20%;
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
@@ -133,6 +133,21 @@ body {
           filter: grayscale(100%);
 }
 
+@media only screen and (orientation: portrait) {
+    /* For mobile phones: */
+    [class*="t1-item"] {
+        -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  position: relative;
+  width: 100%;
+  height: 175vh;
+  min-height: 900px;
+  color: #fff;
+  overflow: hidden;
+  -webkit-transition: height 0.5s ease;
+  transition: width 0.5s ease;
+    }
+}
 .page {
     margin-right: 0px;
     width:100%;

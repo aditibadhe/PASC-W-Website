@@ -32,7 +32,7 @@ body {
   height: 73px;
   line-height: 75px;
   background-image:url('https://i.pinimg.com/236x/70/93/dd/7093dde39147a57ec093d8006c5f1a05--texture-yellow.jpg');
-    
+
   padding: 0 2px;
 }
 
@@ -52,7 +52,7 @@ position:fixed;
   transition: 0.2s all;
 }
 .menu-switch:hover .bar-icon > * {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: cornflowerblue;
 }
 
 .bar-icon {
@@ -63,7 +63,7 @@ position:fixed;
 .bar-icon > * {
   height: 4px;
   width: 25px;
-  background-color: #010101;
+  background-color: #fff;
     
   position: absolute;
   top: 0;

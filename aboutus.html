@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" >
 
@@ -28,15 +29,24 @@
 
   
       <link rel="stylesheet" href="css/about.css">
-
-    
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/flipclock.css">
 </head>
 
 <body style="background-color:#000010;">
 
-  <div ng-app="testApp" ng-controller="testCtrl as test" ng-class="{'menu-open': test.menuOpen}">
-      <header class="site-navbar navbar-fixed-top">
-            <h1 style="text-align:center; font-weight:600; text-decoration: underline; letter-spacing:3px;">ABOUT US</h1>
+  <!--==========================
+    Header
+  ============================-->
+ <div ng-app="testApp" ng-controller="testCtrl as test" ng-class="{'menu-open': test.menuOpen}">
+  <header id="header" style="background-color: #000010">
+    <div class="container-fluid">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="#intro" class="scrollto">ABOUT US</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
           <a ng-click='test.menuOpen =! test.menuOpen' class="menu-switch">
       <i class="bar-icon">
         <div class="bar-icon-1"></div>
@@ -44,9 +54,7 @@
         <div class="bar-icon-3"></div>
       </i>
     </a>
-  </header>
-       
- <nav class="menu" style="position:fixed;">
+       <nav class="menu" style="position:fixed;">
     
       <ul class="list-unstyled" style="left:30%;">
        <a href = "index.html"><li>Home
@@ -70,7 +78,9 @@
     <ul class="list-unstyled" style="right:10%;">
     <img src="img/empowerment.jpg" alt="IMAGE" style="width:300px; height:250px;">
       </ul>
-      </nav>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
     </div>
     
     
@@ -87,8 +97,7 @@
 
     <div class="tl-content">
      
-      <p>The ACM India Council comprises a cross section of the computer science and information technology community committed to increasing the visibility and relevance of ACM in India. The council is focused on a wide range of ACM activities including:
-  serving as a professional network for individuals who are involved with the science and technology of computing, encouraging students to take an active interest in the emerging and exciting world of computing, facilitating the organization of high-quality ACM conferences in India.
+      <p>The ACM India Council council is focused on a wide range of ACM activities including: serving as a professional network for technology of computing, encouraging students to take an active interest in the world of computing, facilitating the organization of high-quality ACM conferences in India.
 </p>
     </div>
 
@@ -103,7 +112,7 @@
     </div>
 
     <div class="tl-content">
-      <h1 class="f3 text--accent ttu" style="font-size:20px;">MISSION STATEMENT</h1>
+      <!--h1 class="f3 text--accent ttu" style="font-size:20px;">MISSION STATEMENT</h1-->
       <p>ACM-W supports, celebrates, and advocates internationally for the full engagement of women in all aspects of the computing field, providing a wide range of programs and services to ACM members and working in the larger community to advance the contributions of technical women.</p>
     </div>
 
@@ -118,7 +127,7 @@
     </div>
 
     <div class="tl-content">
-     <p>Our mission is to offer students an opportunity to learn, innovate and grow into intellectuals, visionaries, and technocrats, who work to promote the advancement of science and technology. Every year we impart knowledge to hundreds of students and help them understand how they can contribute to the field of computing science. We conduct several technical events in a year. We nurture the growth of inquisitive minds by providing them with the toolkit to excel in various fields.</p>
+     <p>Our mission is to offer students an opportunity to learn, innovate and grow into intellectuals, visionaries, and technocrats, who work to promote the advancement of science and technology. We nurture the growth of inquisitive minds by providing them with the toolkit to excel in various fields.</p>
     </div>
 
   </div>

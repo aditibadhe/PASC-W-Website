@@ -29,6 +29,7 @@
     <link href="css/coc.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
     <link href="css/menu.css" rel="stylesheet">
+    <link href="css/style2.css" rel="stylesheet">
     <!-- Google fonts -->
     <link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>   
     <link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>    
@@ -66,20 +67,27 @@
 
   
 
-<!--=========== HEADER SECTION ================-->
-  	<div ng-app="testApp" ng-controller="testCtrl as test" ng-class="{'menu-open': test.menuOpen}">
-  	<header class="site-navbar navbar-fixed-top">
-        <h1 style="text-align:center; font-weight:500; text-decoration: underline; letter-spacing:1px;">CODE OF CONDUCT</h1>
-    <a ng-click='test.menuOpen =! test.menuOpen' class="menu-switch">
+<!--==========================
+    Header
+  ============================-->
+
+ <div ng-app="testApp" ng-controller="testCtrl as test" ng-class="{'menu-open': test.menuOpen}" >
+  <header id="header" style="background-color: #000010;">
+    <div class="container-fluid" >
+
+      <div id="logo" class="pull-left">
+        <h1><a href="#intro" class="scrollto">CODE OF CONDUCT</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
+          <a ng-click='test.menuOpen =! test.menuOpen' class="menu-switch">
       <i class="bar-icon">
         <div class="bar-icon-1"></div>
         <div class="bar-icon-2"></div>
         <div class="bar-icon-3"></div>
       </i>
     </a>
-  	</header>
-       
-  	<nav class="menu" style="position:fixed;">
+       <nav class="menu" style="position:fixed;">
     
       <ul class="list-unstyled" style="left:30%;">
        <a href = "index.html"><li>Home
@@ -103,25 +111,27 @@
     <ul class="list-unstyled" style="right:10%;">
     <img src="img/empowerment.jpg" alt="IMAGE" style="width:300px; height:250px;">
       </ul>
-      </nav>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
     </div>
 
-
+<br>
   <section id="coc" class="home-section splitsection" style="margin-top:0;">
 
     <div class="heading-about"> 
       <div class="container">
 	<div class="moving-letters">
-        
+        <br><br>
         <h3 class="ml2">PREAMBLE</h3></div>
         <div class="pycon-coc"><section id="coc" class="home-section splitsection" style="margin-top:0">
           <p>Commitment to ethical professional conduct is expected of every member (voting members, associate members, and student members) of the Association for Computing Machinery (ACM).</p>
 
           <p>This Code, consisting of 24 imperatives formulated as statements of personal responsibility, identifies the elements of such a commitment. It contains many, but not all, issues professionals are likely to face. <a href="https://www.acm.org/about-acm/acm-code-of-ethics-and-professional-conduct#sect1" target="_blank">Section 1</a> outlines fundamental ethical considerations, while <a href="https://www.acm.org/about-acm/acm-code-of-ethics-and-professional-conduct#sect2" target="_blank">Section 2</a> addresses additional, more specific considerations of professional conduct. Statements in <a href="https://www.acm.org/about-acm/acm-code-of-ethics-and-professional-conduct#sect3" target="_blank">Section 3</a> pertain more specifically to individuals who have a leadership role, whether in the workplace or in a volunteer capacity such as with organizations like ACM. Principles involving compliance with this Code are given in <a href="https://www.acm.org/about-acm/acm-code-of-ethics-and-professional-conduct#sect4" target="_blank">Section 4</a>.</p>
 
-          <p>The Code shall be supplemented by a set of Guidelines, which provide explanation to assist members in dealing with the various issues contained in the Code. It is expected that the Guidelines will be changed more frequently than the Code.</p>
+          <!--p>The Code shall be supplemented by a set of Guidelines, which provide explanation to assist members in dealing with the various issues contained in the Code. It is expected that the Guidelines will be changed more frequently than the Code.</p>
 
-          <p>The Code and its supplemented Guidelines are intended to serve as a basis for ethical decision making in the conduct of professional work. Secondarily, they may serve as a basis for judging the merit of a formal complaint pertaining to violation of professional ethical standards.</p></section>
+          <p>The Code and its supplemented Guidelines are intended to serve as a basis for ethical decision making in the conduct of professional work. Secondarily, they may serve as a basis for judging the merit of a formal complaint pertaining to violation of professional ethical standards.</p--></section>
 
 <br><section id="coc" class="home-section splitsection" style="margin-top:0px">
 	<div class="moving-letters">

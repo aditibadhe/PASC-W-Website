@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/speakers.css">
-   
+   <link rel="stylesheet" href="css/style2.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -76,19 +76,27 @@
 </head>
 
 <body style="background-color:#000010;">
-    <div ng-app="testApp" ng-controller="testCtrl as test" ng-class="{'menu-open': test.menuOpen}">
-  <header class="site-navbar navbar-fixed-top">
-      <h1 style="text-align:center; font-weight:500; text-decoration: underline; letter-spacing:1px; color:darkslateblue;">SPEAKERS</h1>
-    <a ng-click='test.menuOpen =! test.menuOpen' class="menu-switch">
+    
+    <!--==========================
+    Header
+  ============================-->
+ <div ng-app="testApp" ng-controller="testCtrl as test" ng-class="{'menu-open': test.menuOpen}">
+  <header id="header" style="background-color: #000010;">
+    <div class="container-fluid">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="#intro" class="scrollto">SPEAKERS</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
+          <a ng-click='test.menuOpen =! test.menuOpen' class="menu-switch">
       <i class="bar-icon">
         <div class="bar-icon-1"></div>
         <div class="bar-icon-2"></div>
         <div class="bar-icon-3"></div>
       </i>
     </a>
-  </header>
-       
- <nav class="menu" style="position:fixed;">
+       <nav class="menu" style="position:fixed;">
     
       <ul class="list-unstyled" style="left:30%;">
        <a href = "index.html"><li>Home
@@ -110,11 +118,13 @@
           </ul>
       <div class="outer_vertical"><div class="inner_vertical"></div></div>
     <ul class="list-unstyled" style="right:10%;">
-    <img src="img/empowerment.jpg" alt="IMAGE" style="width:250px; height:200px;">
+    <img src="img/empowerment.jpg" alt="IMAGE" style="width:300px; height:250px;">
       </ul>
-      </nav>
+      </nav><!-- #nav-menu-container -->
     </div>
-<br><br><br>
+  </header><!-- #header -->
+    </div>
+  <br><br><br><br>
     
     
 <div style="background-color:white;">
@@ -198,7 +208,7 @@ $(document).ready(function(){
   <script src='https://code.jquery.com/jquery-1.10.1.min.js'></script>
    
     <script src="js/speaker.js"></script>
-
+    <script src="js/main2.js"></script>
 
 
 

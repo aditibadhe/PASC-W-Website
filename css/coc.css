@@ -118,3 +118,37 @@ a:focus {
     width: 60px;
 
 }
+
+
+/*resposive media*/
+@media screen and (max-width: 1024px) {
+#coc
+{
+  padding: 30px;
+}
+}
+@media screen and (max-width: 768px) {
+ #coc
+{
+  padding: 24px;
+}
+}
+@media screen and (max-width: 640px) {
+ #coc
+{
+  padding: 20px;
+}
+}
+@media screen and (max-width: 480px) {
+ #coc
+{
+  padding: 15px;
+}
+}
+@media screen and (max-width: 320px) {
+#coc
+{
+  padding: 10px;
+} 
+}
+

@@ -12,7 +12,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel="stylesheet" href="css/menu.css">
-    
+ <link rel="stylesheet" href="css/style2.css">   
    
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -25,7 +25,21 @@
         <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One|Source+Sans+Pro:400" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
+<style type="text/css">
+	#poster{
+		margin: auto;
+		align-content: center;
+		max-width:650px;
+		max-height: 600px;
+		width: 85%;
+		margin-top: 105px;
+		border: 1px solid black;
+	}
+	.sp{
+		text-align: center;
+		font-weight: 50em;
+	}
+</style>
   
 
     
@@ -33,18 +47,26 @@
 
 <body style="background-color: #000010;">
 
-  <div ng-app="testApp" ng-controller="testCtrl as test" ng-class="{'menu-open': test.menuOpen}">
-  <header class="site-navbar navbar-fixed-top">
-      <h1 style="text-align:center; font-weight:500; text-decoration: underline; letter-spacing:1px;">SPONSORS</h1>
-    <a ng-click='test.menuOpen =! test.menuOpen' class="menu-switch">
+   <!--==========================
+    Header
+  ============================-->
+ <div ng-app="testApp" ng-controller="testCtrl as test" ng-class="{'menu-open': test.menuOpen}">
+  <header id="header" style="background-color: #000010;">
+    <div class="container-fluid">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="#intro" class="scrollto">SPONSORS</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
+          <a ng-click='test.menuOpen =! test.menuOpen' class="menu-switch">
       <i class="bar-icon">
         <div class="bar-icon-1"></div>
         <div class="bar-icon-2"></div>
         <div class="bar-icon-3"></div>
       </i>
     </a>
-  </header>
-<nav class="menu" style="position:fixed;">
+       <nav class="menu" style="position:fixed;">
     
       <ul class="list-unstyled" style="left:30%;">
        <a href = "index.html"><li>Home
@@ -68,24 +90,34 @@
     <ul class="list-unstyled" style="right:10%;">
     <img src="img/empowerment.jpg" alt="IMAGE" style="width:300px; height:250px;">
       </ul>
-      </nav>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
     </div>
     
+<div style="background-color: white;">   
+	<center>
+	<img src="img/poster.jpg" id="poster"></center>
+	<div align="center" class="fond" style="padding-top: 15px;">
 
-<div align="center" class="fond">
+		<div class="col-ld-3  col-md-3 col-sm-3">
+	    	<div class="style_prevu_kit" style="background-image: url(img/5.png);"></div>
+	    	<h4 class="sp">TBD</h4></div>
+	    <div class="col-ld-3  col-md-3 col-sm-3">
+	        <div class="style_prevu_kit" style="background-image: url(img/5.png);"></div>
+	        <h4 class="sp">TBD</h4></div>
+	    <div class="col-ld-3  col-md-3 col-sm-3">
+	        <div class="style_prevu_kit" style="background-image:url(img/5.png);"></div>
+	        <h4 class="sp">TBD</h4></div>
+	    <div class="col-ld-3  col-md-3 col-sm-3">
+		<div class="style_prevu_kit" style="background-image: url(img/5.png);"></div>
+	        <h4 class="sp">TBD</h4></div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	</div>
+<br><br>
+</div>  
 
-<div class="col-ld-3  col-md-3 col-sm-3">
-    <div class="style_prevu_kit" style="background-image: url(img/5.png);"></div></div>
-    <div class="col-ld-3  col-md-3 col-sm-3">
-        <div class="style_prevu_kit" style="background-image: url(img/5.png);"></div></div>
-    <div class="col-ld-3  col-md-3 col-sm-3">
-        <div class="style_prevu_kit" style="background-image:url(img/5.png);"></div></div>
-    <div class="col-ld-3  col-md-3 col-sm-3">
-<div class="style_prevu_kit" style="background-image: url(img/5.png);"></div><div>
-        </div></div>
-      
-    
-    <footer>
+    <footer style="bottom: 0"><br>
         <div class="col-ld-3  col-md-3 col-sm-3">
              <div class="footer-contact">Pune Institute of Computer Technology<br>Sr. No 27, Pune-Satara Road<br> Behind Bharati Vidyapeeth College<br> Dhankawadi, Pune<br>Maharashtra 411043</div>
         </div>
@@ -116,7 +148,7 @@
         
     </footer>
     
-    </div>
+  
   <script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js'></script>
 <script  src="js/menu.js"></script>
   <script>
