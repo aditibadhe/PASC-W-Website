@@ -26,50 +26,43 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <style>
-    .profile{
-       
-        max-width: 22em;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 2em;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  line-height: 1;
+    .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 200px;
+  max-height: 350px;
+  margin: auto;
   text-align: center;
-    }
-    .profile-img {
+  font-family: arial;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
   display: inline-block;
-        visibility: inherit;
-  height: 15em;
-  margin-right: auto;
-  margin-left: auto;
-  border: .5em solid #f2f2f2;
-  border-radius: 100%;
-  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
 }
 
-.profile-text {
-  margin-top: -3.5em;
-  padding: 5em 1.5em 1.5em 1.5em;
-  background:#00cccc ;
-    color: black;
-  border-radius: 3px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
 }
 
-.profile-name {
-  margin-right: -1em;
-  margin-bottom: .75em;
-  margin-left: -1em;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding-bottom: .75em;
-  font-size: 1.5em;
-  text-transform: uppercase;
-    color:black;
-}
-
-.profile-title {
-  color: solid black;
+button:hover, a:hover {
+  opacity: 0.7;
 }
 
     </style>
@@ -85,7 +78,7 @@
     <div class="container-fluid">
 
       <div id="logo" class="pull-left">
-        <h1><a href="#intro" class="scrollto">SPEAKERS</a></h1>
+        <h1><a href="#intro" class="scrollto" style="left:30%; font-size: 45px;">OUR TEAM</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
       </div>
@@ -102,13 +95,13 @@
        <a href = "index.html"><li>Home
           <hr style="width:30%; border:1px solid red;"></li></a>
         <br>
-     <a href = "coc.html"><li>Conduct
-         <hr style="width:30%; border:1px solid red;"></li></a>
-        <br>  
-     <a href = "speaker.html"><li>Speakers
+   
+     <a href = "speaker.html"><li>Our Team
          <hr style="width:30%; border:1px solid red;"></li></a>
         <br>
-          
+          <a href = "event.html"><li>Events
+         <hr style="width:30%; border:1px solid red;"></li></a>
+        <br>
         <a href = "aboutus.html"><li>About
                <hr style="width:30%; border:1px solid red;"></li></a>
           <br>
@@ -118,7 +111,7 @@
           </ul>
       <div class="outer_vertical"><div class="inner_vertical"></div></div>
     <ul class="list-unstyled" style="right:10%;">
-    <img src="img/empowerment.jpg" alt="IMAGE" style="width:300px; height:250px;">
+    <img src="img/index.jpg" alt="IMAGE" style="width:300px; height:250px;">
       </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -128,7 +121,7 @@
     
     
 <div style="background-color:white;">
-   <div class="profile">
+   <!--<div class="profile">
     <div class="animatable bounceIn">
      <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkSlUBZtB86N97Bp0iV-jLw_Zf1plsAFTXEODJivLlbkPcKonB class="profile-img">
   <div class="profile-text">
@@ -160,38 +153,80 @@
     <span class="profile-title">UX / UI Designer</span>
              </div>
   </div>
+      </div>-->
+
+  <div class="card">
+    <img src="img/madhura.jpg" style="width:100%">
+    <h1>Madhura Avachat</h1>
+    <p class="title">CHAIR</p><br><br>
+  </div>
+
+  <div class="card">
+    <img src="img/speaker.jpg" style="width:100%">
+    <h1>Shivani Pahade</h1>
+    <p class="title">VICE-CHAIR</p><br><br>
+  </div>
+
+  <div class="card">
+    <img src="img/dhwani_new.jpg" style="width:100%">
+    <h1>Dhwani Shah</h1>
+    <p class="title">SECRETARY</p><br><br>
+  </div>
+
+  <div class="card">
+    <img src="img/tanvi.jpg" style="width:100%">
+    <h1>Tanvi Bhargaw</h1>
+    <p class="title">TREASURER</p><br><br>
+  </div>
+
+  <div class="card">
+    <img src="img/speaker.jpg" style="width:100%">
+    <h1>Shreya Narkar</h1>
+    <p class="title">PRO</p><br><br>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <div class="card">
+        <img src="img/speaker.jpg" style="width:100%">
+        <h1>Nilakshi Lo</h1>
+        <p class="title">TECHNICAL HEAD</p><br><br>
       </div>
-   
     </div>
+
+    <div class="col" style="margin-bottom: 25px;">
+      <div class="card">
+        <img src="img/shraddha_new.jpg" style="width:100%">
+        <h1>Shraddha Varat</h1>
+        <p class="title">TECHNICAL HEAD</p><br><br>
+      </div>
+    </div>
+  </div>
+</div>
+
      <footer>
-        <div class="col-ld-3  col-md-3 col-sm-3">
+       <div class="col-ld-3  col-md-4 col-sm-4" style="display: inline-block;float: left">
              <div class="footer-contact">Pune Institute of Computer Technology<br>Sr. No 27, Pune-Satara Road<br> Behind Bharati Vidyapeeth College<br> Dhankawadi, Pune<br>Maharashtra 411043</div>
         </div>
         
-        <div class="col-ld-3  col-md-3 col-sm-3">
-            <div class="footer-quote">
-            Little girls with<br>Dreams become <br>women with Vision!<br>
-                <hr style="1px soiid white; width:100px;">
-            </div>
-        </div>
+       
         
-        
-        <div class="col-ld-3  col-md-3 col-sm-3" >
+        <div class="col-ld-3  col-md-4 col-sm-4" style="display: inline-block;float: left" >
             <div class="footer-acmw">
                 ACM-W supporting, celebrating and advocating for Women in Computing<br><br>
                 <a class="test" href="https://women.acm.org/" data-toggle="tooltip" data-placement="top" title="Visit ACMW">women.acm.org</a>
-                <hr style="1px soiid white; width:100px;">
+                <hr style="1px soiid white; width:150px;">
             </div>            
             
         </div>
-        <div class="col-ld-3  col-md-3 col-sm-3" >
+        
+        <div class="col-ld-3  col-md-4 col-sm-4" style="display: inline-block;float: left;bottom: 55px;">
            
              <a href="https://www.facebook.com/acmpict" class="fa fa-facebook"></a>
 <a href="https://twitter.com/theofficialacm" class="fa fa-twitter"></a>
 <a href="https://plus.google.com/u/0/114498874837755908513" class="fa fa-google"></a>
                
             </div>
-        
     </footer>
       
   <script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js'></script>

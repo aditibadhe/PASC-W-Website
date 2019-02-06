@@ -713,6 +713,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #services .title {
+  text-align: center;
   margin-left: 60px;
   font-weight: 700;
   margin-bottom: 15px;
@@ -741,7 +742,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Call To Action Section
 --------------------------------*/
 #call-to-action {
-  background: linear-gradient(rgba(0, 142, 99, 0.1), rgba(0, 0, 0, 0.1)), url(/home/shraddha/ACM-WOMEN/ACMW_website/img/1.jpg) fixed center center;
+  background: linear-gradient(rgba(0,142,99,0.1),rgba(0,0,0,0.1)),url("../img/parallax3.jpg")fixed center;
   background-size: cover;
   padding: 60px 0;
 }

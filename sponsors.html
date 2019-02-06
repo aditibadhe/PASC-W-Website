@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ACMW|Website</title>
     <link rel="shortcut icon" type="image/icon" href="img/favicon.png"/>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
@@ -26,20 +26,77 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <style type="text/css">
-	#poster{
-		margin: auto;
-		align-content: center;
-		max-width:650px;
-		max-height: 600px;
-		width: 85%;
-		margin-top: 105px;
-		border: 1px solid black;
-	}
-	.sp{
-		text-align: center;
-		font-weight: 50em;
-	}
+  #poster{
+    margin: auto;
+    margin-left: 20px;
+    align-content: center;
+    max-width:650px;
+    max-height: 600px;
+    width: 85%;
+    margin-top: 105px;
+    border: 1px solid black;
+  }
+
+   /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+  margin-top: 50px;
+  background-color: transparent;
+  width: 250px;
+  height: 250px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: black;
+  color: white;
+  transform: rotateY(180deg);
+} 
+h5
+{
+  font-family: sans-serif;
+  font-size: 30px;
+  text-decoration: bold
+}
+p
+{
+  font-family: sans-serif;
+  font-size: 20px;
+  text-decoration: bold,italic
+}
 </style>
+  
+
   
 
     
@@ -55,7 +112,7 @@
     <div class="container-fluid">
 
       <div id="logo" class="pull-left">
-        <h1><a href="#intro" class="scrollto">SPONSORS</a></h1>
+        <h1><a href="#intro" class="scrollto" style="font-size: 45px;">SPONSORS</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
       </div>
@@ -72,13 +129,13 @@
        <a href = "index.html"><li>Home
           <hr style="width:30%; border:1px solid red;"></li></a>
         <br>
-     <a href = "coc.html"><li>Conduct
-         <hr style="width:30%; border:1px solid red;"></li></a>
-        <br>  
-     <a href = "speaker.html"><li>Speakers
+    <a href = "speaker.html"><li>Our Team
          <hr style="width:30%; border:1px solid red;"></li></a>
         <br>
-          
+         <a href = "event.html"><li>Events
+         <hr style="width:30%; border:1px solid red;"></li></a>
+        <br>  
+       
         <a href = "aboutus.html"><li>About
                <hr style="width:30%; border:1px solid red;"></li></a>
           <br>
@@ -88,49 +145,122 @@
           </ul>
       <div class="outer_vertical"><div class="inner_vertical"></div></div>
     <ul class="list-unstyled" style="right:10%;">
-    <img src="img/empowerment.jpg" alt="IMAGE" style="width:300px; height:250px;">
+    <img src="img/index.jpg" alt="IMAGE" style="width:300px; height:250px;">
       </ul>
       </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- #header -->
     </div>
     
-<div style="background-color: white;">   
-	<center>
-	<img src="img/poster.jpg" id="poster"></center>
-	<div align="center" class="fond" style="padding-top: 15px;">
+<div class="container-fluid" style="background-color:  white;"> 
+ 
+  <div class="row">
+    <div class="col-ld-6 col-md-6 col-sm-6">
+        <center>
+          <img src="img/poster.jpg" id="poster">
+        </center>
+        <div class="fond" style="padding-top: 15px;"></div>
+    </div>
+    <div class="col-ld-6 col-md-6 col-sm-6">
+      <br><br>
+      <div class="row" style="margin-top: 50px;">
+        <div class="col-sm-6" >
+          <center>
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src="img/5.png">
+                </div>
+                <div class="flip-box-back">
+                  <br><br>
+                  <center>
+                    <h5>SPONSORS</h5>
+                    <br>
+                    <p>Tbd<p>
+                  </center>
+                </div>
+              </div>
+            </div> 
+          </center>
+        </div>
 
-		<div class="col-ld-3  col-md-3 col-sm-3">
-	    	<div class="style_prevu_kit" style="background-image: url(img/5.png);"></div>
-	    	<h4 class="sp">TBD</h4></div>
-	    <div class="col-ld-3  col-md-3 col-sm-3">
-	        <div class="style_prevu_kit" style="background-image: url(img/5.png);"></div>
-	        <h4 class="sp">TBD</h4></div>
-	    <div class="col-ld-3  col-md-3 col-sm-3">
-	        <div class="style_prevu_kit" style="background-image:url(img/5.png);"></div>
-	        <h4 class="sp">TBD</h4></div>
-	    <div class="col-ld-3  col-md-3 col-sm-3">
-		<div class="style_prevu_kit" style="background-image: url(img/5.png);"></div>
-	        <h4 class="sp">TBD</h4></div>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-	</div>
-<br><br>
-</div>  
+        <div class="col-sm-6" >
+          <center>
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src="img/5.png" >
+                </div>
+                <div class="flip-box-back">
+                  <br><br>
+                  <center>
+                    <h5>SPONSORS</h5>
+                    <br>
+                    <p>Tbd<p>
+                  </center>
+                </div>
+              </div>
+            </div> 
+          </center>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6" >
+          <center>
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src="img/5.png" >
+                </div>
+                <div class="flip-box-back">
+                  <br><br>
+                  <center>
+                    <h5>SPONSORS</h5>
+                    <br>
+                    <p>Tbd<p>
+                  </center>
+                </div>
+              </div>
+            </div> 
+          </center>
+        </div>
+
+        <div class="col-sm-6">
+          <center>
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src="img/5.png">
+                </div>
+                <div class="flip-box-back">
+                  <br><br>
+                  <center>
+                    <h5>SPONSORS</h5>
+                    <br>
+                    <p>Tbd<p>
+                  </center>
+                </div>
+              </div>
+            </div> 
+          </center>
+        </div>
+      </div>
+
+    </div>
+  </div>
+<br>
+</div>
 
     <footer style="bottom: 0"><br>
-        <div class="col-ld-3  col-md-3 col-sm-3">
+        <div class="col-ld-3  col-md-4 col-sm-4">
              <div class="footer-contact">Pune Institute of Computer Technology<br>Sr. No 27, Pune-Satara Road<br> Behind Bharati Vidyapeeth College<br> Dhankawadi, Pune<br>Maharashtra 411043</div>
         </div>
         
-        <div class="col-ld-3  col-md-3 col-sm-3">
-            <div class="footer-quote">
-            Little girls with<br>Dreams become <br>women with Vision!<br>
-                <hr style="1px soiid white; width:100px;">
-            </div>
-        </div>
+   
         
         
-        <div class="col-ld-3  col-md-3 col-sm-3" >
+        <div class="col-ld-3  col-md-4 col-sm-4" >
             <div class="footer-acmw">
                 ACM-W supporting, celebrating and advocating for Women in Computing<br><br>
                 <a class="test" href="https://women.acm.org/" data-toggle="tooltip" data-placement="top" title="Visit ACMW">women.acm.org</a>
@@ -139,7 +269,7 @@
             
         </div>
         
-        <div class="col-ld-3  col-md-3 col-sm-3" >
+        <div class="col-ld-3  col-md-4 col-sm-4" >
            
            <a href="https://www.facebook.com/acmpict" class="fa fa-facebook"></a>
 <a href="https://twitter.com/theofficialacm" class="fa fa-twitter"></a>

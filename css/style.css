@@ -1,4 +1,4 @@
-body {
+pabody {
 	overflow-x:hidden;
 }
 
@@ -8,7 +8,7 @@ body {
  /* margin-left:85px;
   padding-top: 90px;*/
     margin-top:50px;
-  background-image:url("/home/abc/Downloads/ACMW-WEBSITE/img/acmw.jpg");
+  background-image:url("../img/acmw.jpg");
       text-align: center;
   font-size: 30px;
     float:left;
@@ -45,7 +45,7 @@ width: 80%;
  /* margin-left:85px;
   padding-top: 90px;*/
     margin-top:50px;
-  background-image:url("/home/abc/Downloads/ACMW-WEBSITE/img/coding.jpg");
+  background-image:url("../img/coding.jpg");
       text-align: center;
   font-size: 30px;
     float:left;

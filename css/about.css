@@ -11,14 +11,14 @@ body {
   
 }
 #timeline:hover .tl-item {
-  width: 33.33333%;
+  width: 50%;
 }
 
 .tl-item {
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
   position: relative;
-  width: 33.33%;
+  width: 50%;
   height: 100vh;
   min-height: 900px;
   color: #fff;
